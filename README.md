@@ -1,4 +1,4 @@
-# Ubuntu-amd-drivers
+# Ubuntu-AMD-drivers
 
 ROCM drivers installation, this repository will help to install amdgpu Drivers,
 
