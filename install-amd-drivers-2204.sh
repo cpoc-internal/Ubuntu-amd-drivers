@@ -10,7 +10,7 @@ sudo chown -Rv _apt:root /var/cache/apt/archives/partial/
 sudo chmod -Rv 700 /var/cache/apt/archives/partial/
 sudo apt install ./amdgpu-install_7.1.70100-1_all.deb -y
 sudo apt update
-sudo apt install python3-setuptools python3-wheel
+sudo apt install python3-setuptools python3-wheel -y
 sudo usermod -a -G render,video $LOGNAME # Add the current user to the render and video groups
 sudo apt install rocm -y
 
@@ -18,7 +18,6 @@ sudo apt update
 sudo apt install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)"
 sudo apt install amdgpu-dkms -y
 
-sudo apt install python3-setuptools python3-wheel -y
 sudo apt install environment-modules -y
 sudo usermod -a -G video,render $LOGNAME
 echo 'ADD_EXTRA_GROUPS=1' | sudo tee -a /etc/adduser.conf
