@@ -18,4 +18,16 @@ cd Ubuntu-amd-drivers
 chmod +x install-amd-drivers-2204.sh
  ./install-amd-drivers-2204.sh
 ```
+3. Create new netplan config for UCS C885 H200 or AMD server persistent config, it will configure backend and frontend
 
+Server 1
+```
+ chmod +x netplan-config-1.sh
+ ./netplan-config-1.sh
+```
+
+Server 2
+```
+ chmod +x netplan-config-2.sh
+ ./netplan-config-2.sh
+```
